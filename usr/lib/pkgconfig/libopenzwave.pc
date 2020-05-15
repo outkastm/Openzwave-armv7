@@ -1,0 +1,15 @@
+prefix=/usr/local
+exec_prefix=/usr/local/bin
+libdir=/usr/local/lib/
+includedir=/usr/local/include/openzwave//
+sysconfdir=/usr/local/etc/openzwave//
+gitversion=
+docdir=/usr/local/share/doc/openzwave-1.6.1123/
+
+Name: libopenzwave
+Description: A Open Source implementation of the ZWave Serial API
+URL: http://www.openzwave.org/
+Version: 1.6
+Libs: -L${libdir} -lopenzwave
+Cflags: -I${includedir} 
+Libs.private: -lresolv
